@@ -1,5 +1,5 @@
 print("Enter a decimal to convert to Roman numeral: ")
-num = raw_input()
+num = input()
 
 RomanList = ["M", "CM", "D", "CD", "C", "XC","L", "XL", "X","IX", "V", "IV", "I"]
 DecimalList = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]
