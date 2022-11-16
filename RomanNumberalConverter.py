@@ -1,11 +1,17 @@
-print("Enter a Roman Numeral to convert to decimal: ")
-numeral = raw_input()
+print("Enter a decimal to convert to Roman numeral: ")
+num = raw_input()
 
-RomanDecimalMap = {
-	"I" : 1,
-	"V" : 5,
-	"X" : 10
-}
+RomanList = ["X", "V", "I"]
+DecimalList = [10, 5, 1]
 
-print(RomanDecimalMap[numeral])
+#print(RomanDecimalMap[numeral])
 
+temp = int(num)
+output_string = ""
+while(temp>0):
+	for i, decimal in enumerate(DecimalList):
+		if(temp>=decimal):
+			temp -= decimal
+			output_string += RomanList[i]
+
+print(output_string)
